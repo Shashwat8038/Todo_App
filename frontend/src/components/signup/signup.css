@@ -1,0 +1,99 @@
+/* Container Styling */
+.signup {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.column {
+  padding: 40px;
+}
+
+/* Left Column Styling */
+.col-left {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Form Styling */
+input.input-signup {
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input.input-signup:focus {
+  border-color: #764ba2;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(118, 75, 162, 0.2);
+}
+
+button.btn-signup {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.btn-signup:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+button.btn-signup:active {
+  transform: scale(0.98);
+}
+
+/* Add smooth transition for interactive elements */
+input, button {
+  transition: all 0.3s ease;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .col-left {
+    display: none;
+  }
+
+  .column {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup {
+    padding: 10px;
+  }
+
+  button.btn-signup {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
